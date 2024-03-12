@@ -26,7 +26,7 @@ const HeaderAuth = () => {
                 <PopoverContent>
                     <div className="p-4">
                         <form action={actions.signOut}>
-                            <Button>Sign Out</Button>
+                            <Button type="submit">Sign Out</Button>
                         </form>
                     </div>
                 </PopoverContent>
