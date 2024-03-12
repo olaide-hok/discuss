@@ -41,6 +41,12 @@ const PostCreateform = () => {
                             errorMessage={formState.errors.content?.join(', ')}
                         />
 
+                        {formState.errors._form ? (
+                            <div className="rounded p-2 bg-red-200 border border-red-400">
+                                {formState.errors._form?.join(', ')}
+                            </div>
+                        ) : null}
+
                         <FormButton>Create a Post</FormButton>
                     </div>
                 </form>
